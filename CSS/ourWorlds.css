@@ -1,0 +1,480 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.imagerow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.discovery-link {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+}
+.discovery-link a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.header {
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  height: 240px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.header-links {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  display: flex;
+
+  gap: 20px;
+}
+
+.header-links a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 18px;
+
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.header.scrolled-up {
+  height: 150px; /* Reduced height when scrolled up */
+  background-color: white;
+  color: black;
+}
+
+.imagerow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.imagerow > div {
+  border: none;
+  display: flex;
+  width: 443px;
+  height: 400px;
+}
+/*
+#image1,
+#image2,
+#image3,
+#image4,
+#image5,
+#image6,
+#image7 {
+  width: 320px;
+}
+*/
+.imagerow img {
+  /*Better approach than above*/
+  width: 322px;
+}
+.imageText1,
+.imageText2,
+.imageText3,
+.imageText4,
+.imageText5,
+.imageText6,
+.imageText7,
+.imageText8,
+.imageText9 {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  border: none;
+  width: 1335px;
+  font-size: 15px;
+  height: 130px;
+  background-color: black;
+}
+
+.Text1 {
+  color: white;
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 5px;
+}
+.Text1 span {
+  color: gray;
+}
+
+.Text2 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 198px;
+  margin-right: 50px;
+}
+.Text2 span {
+  color: gray;
+}
+.Text3 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 155px;
+}
+
+.Text3 span {
+  color: gray;
+}
+
+.Text4 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 195px;
+}
+
+.Text4 span {
+  color: gray;
+}
+
+.Text5 {
+  color: white;
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 5px;
+}
+
+.Text5 span {
+  color: gray;
+}
+
+.Text6 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 200px;
+}
+
+.Text6 span {
+  color: gray;
+}
+
+.Text7 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 175px;
+}
+
+.Text7 span {
+  color: gray;
+}
+.Text8 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 195px;
+}
+
+.Text8 span {
+  color: gray;
+}
+
+.Text9 {
+  color: white;
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 5px;
+}
+
+.Text9 span {
+  color: gray;
+}
+.Text10 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 125px;
+}
+
+.Text10 span {
+  color: gray;
+}
+.Text11 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 150px;
+}
+
+.Text11 span {
+  color: gray;
+}
+
+.Text12 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 218px;
+}
+
+.Text12 span {
+  color: gray;
+}
+.Text13 {
+  color: white;
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 5px;
+}
+
+.Text13 span {
+  color: gray;
+}
+.Text14 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 180px;
+}
+
+.Text14 span {
+  color: gray;
+}
+.Text15 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 180px;
+}
+
+.Text15 span {
+  color: gray;
+}
+.Text16 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 160px;
+}
+
+.Text16 span {
+  color: gray;
+}
+
+.Text17 {
+  color: white;
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 5px;
+}
+
+.Text17 span {
+  color: gray;
+}
+.Text18 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 245px;
+}
+
+.Text18 span {
+  color: gray;
+}
+.Text19 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 185px;
+}
+
+.Text19 span {
+  color: gray;
+}
+.Text20 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 205px;
+}
+
+.Text20 span {
+  color: gray;
+}
+
+.Text21 {
+  color: white;
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 5px;
+}
+
+.Text21 span {
+  color: gray;
+}
+
+.Text22 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 210px;
+}
+
+.Text22 span {
+  color: gray;
+}
+.Text23 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 200px;
+}
+
+.Text23 span {
+  color: gray;
+}
+.Text24 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 205px;
+}
+
+.Text24 span {
+  color: gray;
+}
+.Text25 {
+  color: white;
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 5px;
+}
+
+.Text25 span {
+  color: gray;
+}
+.Text26 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 208px;
+}
+
+.Text26 span {
+  color: gray;
+}
+.Text27 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 215px;
+}
+
+.Text27 span {
+  color: gray;
+}
+.Text28 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 225px;
+}
+
+.Text28 span {
+  color: gray;
+}
+.Text29 {
+  color: white;
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 5px;
+}
+
+.Text29 span {
+  color: gray;
+}
+.Text30 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 170px;
+}
+
+.Text30 span {
+  color: gray;
+}
+.Text31 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 220px;
+}
+
+.Text31 span {
+  color: gray;
+}
+.Text32 {
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 85px;
+}
+
+.Text32 span {
+  color: gray;
+}
+
+.Text33 {
+  color: white;
+  font-size: 15px;
+  margin-top: 25px;
+  margin-left: 5px;
+}
+
+.Text33 span {
+  color: gray;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 2px 0;
+  height: 450px;
+  position: relative;
+}
+.footer-column1,
+.footer-column2,
+.footer-column3 {
+  position: absolute;
+  top: 70px;
+}
+.footer-column1 {
+  left: 800px;
+}
+
+.footer-column2 {
+  right: 250px;
+}
+.footer-column3 {
+  right: 50px;
+}
+
+.footer-links {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+
+  padding: 0px 0px;
+
+  text-align: left;
+}
+.footerText {
+  text-align: left;
+  font-size: 12px;
+}
+.footer-column4 {
+  margin-left: 50px;
+  bottom: 0;
+  position: absolute;
+}
+
+#footerSpan {
+  margin-left: 800px;
+}
